@@ -1,0 +1,30 @@
+{
+  "name": "twitter-backend-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "dev": "nodemon app/server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "5.0.1",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.2",
+    "iconv-lite": "^0.6.3",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.3.5",
+    "nodeman": "^1.1.2",
+    "nodemon": "^2.0.22"
+  },
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "mocha": "^10.2.0",
+    "node-mocks-http": "^1.12.2",
+    "sinon": "^15.1.2"
+  }
+}
