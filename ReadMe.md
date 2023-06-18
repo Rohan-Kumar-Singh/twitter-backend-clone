@@ -8,6 +8,7 @@ To run this project, make sure you have the following prerequisites installed on
 
 - Node.js (version 17 or higher)
 - MySQL database
+- Run the SQL Script to Create Database and Tables
 
 ## Getting Started
 
@@ -52,8 +53,8 @@ The following are the available API endpoints:
 - `POST /users/:userId/follow`: Follow a user. Required parameter: `userId`.
 - `POST /users/:userId/unfollow`: Unfollow a user. Required parameter: `userId`.
 - `POST /tweets`: Post a tweet. Required fields: `userId`, `content`.
-- `GET /tweets/followed`: Get tweets from followed users.
-- `GET /tweets/search`: Search tweets by keyword. Required query parameter: `keyword`.
+- `GET /tweets/followed`: Get tweets from followed users. Required fields: `userId`, `limit`, `page`.
+- `GET /tweets/search`: Search tweets by keyword. Required query parameter: `keyword`, `limit`, `page`.
 
 **Note:** For protected routes (e.g., `POST /users/:userId/follow`, `POST /tweets`), you need to include an `Authorization` header with a valid JWT token. The token can be obtained by logging in.
 
