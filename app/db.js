@@ -4,7 +4,7 @@ const mysql = require('mysql2');
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Root@2404',
+  password: 'rootpswd',
   database: 'twitter_clone',
 });
 
